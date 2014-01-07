@@ -10,8 +10,8 @@ Just a quick python script to find autoscaling instances (by tagname) and rsync 
 You can then add a build task that deploys the code:
 
     Command Line
-Command: /opt/bin/deploy.py %$TagName$% %teamcity.build.checkoutDir% %ssh_key_location%
-Execute: If all previous steps finished successfully (zero exit code)
+    Command: /opt/bin/deploy.py %autoscaling.group.name% %teamcity.build.checkoutDir% %ssh_key_location%
+    Execute: If all previous steps finished successfully (zero exit code)
 
 
 Requirements
